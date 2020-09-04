@@ -213,7 +213,7 @@ def analyze(wires, components):
             comp = term.component
             # find direction of comp relative to loop
             # if same then dir == 1 else -1
-            direc = 1 if term == comp.outpt == "output" else -1
+            direc = 1 if term == comp.outpt else -1
 
             if type(comp) == Battery:
                 isBattery = True
